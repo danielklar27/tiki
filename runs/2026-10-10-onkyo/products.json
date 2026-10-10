@@ -1,0 +1,28 @@
+[
+  {
+    "row": 2,
+    "name": "Onkyo TX-NR5100 - רסיבר רשת",
+    "category": "רסיבר לקולנוע ביתי",
+    "brand": "Onkyo",
+    "price": "3999",
+    "delivery_time": "7 ימים",
+    "warranty": "שנתיים",
+    "status": "לא הועלה",
+    "shipping_cost": "",
+    "model": "Onkyo TX-NR5100",
+    "source_link": ""
+  },
+  {
+    "row": 3,
+    "name": "Onkyo TX-NR6100 - רסיבר רשת THX",
+    "category": "רסיבר לקולנוע ביתי",
+    "brand": "Onkyo",
+    "price": "4600",
+    "delivery_time": "7 ימים",
+    "warranty": "שנתיים",
+    "status": "לא הועלה",
+    "shipping_cost": "",
+    "model": "Onkyo TX-NR6100",
+    "source_link": ""
+  }
+]

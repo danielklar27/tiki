@@ -350,7 +350,8 @@ def cmd_sheet_to_run(a):
         products = [p for p in products if p["row"] in wanted]
     rd = run_dir(a.run)
     rd.mkdir(parents=True, exist_ok=True)
-    shutil.copy(a.csv, rd / "approved.csv")
+    if Path(a.csv).resolve() != (rd / "approved.csv").resolve():
+        shutil.copy(a.csv, rd / "approved.csv")
     write_json(rd / "products.json", products)
     if getattr(a, "quiet", False):
         return

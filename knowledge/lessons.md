@@ -4,6 +4,9 @@ Every agent reads this file before working. The QA agent and the orchestrator ap
 when they find a repeatable mistake or when Daniel corrects something. One lesson per bullet,
 dated, concrete ("do X / never Y because Z"). Remove a lesson only when Daniel says it's wrong.
 
+## OPEN — before the next price list
+- 2026-10-10 — Daniel: descriptions are too long and too detailed (irrelevant info). He will send example descriptions. BEFORE starting the next sheet, REMIND Daniel to send them, and rewrite copywriting.md from them. Remove this item once done.
+
 ## Daniel's standing decisions (2026-10-10)
 - 2026-10-10 — The "אייקון יבואן רשמי" icon is correct for EVERY brand the store sells — always add it.
 - 2026-10-10 — Every colour/finish of a model is a SEPARATE product (own row, own name with the finish, own code, own image in that finish).

@@ -57,6 +57,12 @@ not put the value in spec_facts. Also record `features` (each with source), `fin
 - `kon.py cld-upload runs/R/items/N/final.jpg --run R --row N` (verifies the public URL serves JPEG).
 - Nothing passes → no image; list the best rejects with reasons.
 
+### Effort
+Aim for ~25 tool calls per product. Stop researching once you have the manufacturer page, one
+spec sheet/manual, the importer page if it exists (one search for it, not a hunt), 6–12 sourced
+facts and one verified image. Download at most ~6 image candidates. Minor source disagreements
+(e.g. weight 8.4 vs 8.5 kg) → use the manufacturer product page value, no need to chase it.
+
 ### 5. Write `runs/R/items/N/facts.json`
 ```json
 {

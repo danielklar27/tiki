@@ -20,11 +20,11 @@ categories (`title_he`) — propose only categories from that list.
 ## Output columns (exact headers, this order — 11 columns, G is always empty)
 | col | header | content |
 |---|---|---|
-| A | `עמודה א': שם מוצר` | product name incl. size/dimensions when relevant; NOT the category name; no colour unless part of the official model name |
+| A | `עמודה א': שם מוצר` | product name incl. size/dimensions when relevant; NOT the category name. When a model comes in several finishes, the finish is part of the name (`KEF LS50 Meta - Carbon Black`) — every finish is its own product and the name must be unique |
 | B | `עמודה ב': קטגוריה` | Hebrew category exactly as in Konimbo |
 | C | `עמודה ג': יצרן` | brand, English — mandatory |
 | D | `עמודה ד': מחיר` | **consumer** price incl. VAT, digits only (never dealer/agent cost) |
-| E | `עמודה ה': זמן אספקה` | e.g. `14 ימים`, `45 ימי עבודה`, `במלאי` — extract from notes if needed |
+| E | `עמודה ה': זמן אספקה` | number of days, e.g. `14 ימים`, `45 ימי עבודה` — extract from notes if needed. No number in the source (empty, `במלאי`, `בהזמנה`) → leave as written and add a QUESTION: Daniel gives the days |
 | F | `עמודה ו': אחריות` | as written; if the list never mentions warranty → `לא צוין במחירון` |
 | G | *(empty header)* | always empty |
 | H | `עמודה ח : סטטוס` | always `לא הועלה` |
@@ -36,7 +36,7 @@ Mapping rules learned from experience:
 - Merge a separate size column into the name: `מסך הקרנה חשמלי` + `85x150 / 68"` → `מסך הקרנה חשמלי 68" (85x150 ס"מ)`.
 - "בהזמנה בלבד - זמן אספקה עד 45 ימי עבודה" → `45 ימי עבודה`; "במלאי" → `במלאי`; "אזל זמנית" → keep and ask whether to include.
 - Shipping column with a number → copy it; "יתומחר בנפרד" → copy as text; no shipping info → empty.
-- Colour/finish variants of the same model are separate rows only if the list prices or lists them separately.
+- Colour/finish variants: ALWAYS one row per finish (Daniel's rule), even if the list gives one price for all finishes — then the price repeats. If the list doesn't say which finishes exist, ask.
 
 Also record in mapping.md: the supplier's name and website (it is often the Israeli importer —
 the researcher uses it as a source), and any image links/media-kit links the source contains.

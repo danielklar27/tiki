@@ -21,8 +21,10 @@ Hebrew, short and concrete. Read `knowledge/lessons.md` first; it overrides this
 ## Phase 1 — price list → sheet
 1. Run id `YYYY-MM-DD-<supplier-slug>`; save the file under `runs/<run>/source/`.
 2. Agent `pricelist-agent` (run id, source path, anything Daniel already said).
-3. `kon.py find-existing --csv runs/<run>/draft.csv` — rows that already exist in the store
-   become questions (update the existing item / skip / create anyway).
+3. `kon.py find-existing --csv runs/<run>/draft.csv` — Daniel's rule: products already in the
+   store are skipped, no question. "same code" → set the row's status (col H) to
+   `קיים בחנות - דילוג`. "same model in title" → compare the finish: different finish = not a
+   duplicate (keep); same finish = skip; can't tell = one question. List skipped rows in the summary.
 4. Ask Daniel all questions in one AskUserQuestion batch (recommended answer first). Apply the
    answers to draft.csv.
 5. Google Drive `create_file`: title `<supplier> - מוצרים להעלאה`, mimeType `text/csv`, content

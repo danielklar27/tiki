@@ -738,8 +738,8 @@ def build_item(product, facts, copy, image_url):
     days = parse_days(product.get("delivery_time"))
     if days is not None:
         item["delivery_time"] = days
-    elif product.get("delivery_time"):
-        flags.append(f"delivery_time_not_numeric: {product['delivery_time']}")
+    else:   # Daniel's rule: no guessing — he supplies the days
+        errors.append(f"delivery time has no number of days: '{product.get('delivery_time', '')}' — ask Daniel")
     if shipping_id:
         item["shipping_option_ids"] = [shipping_id]
     else:

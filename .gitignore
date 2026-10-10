@@ -1,3 +1,7 @@
 .env
-images/*_optimized.webp
 __pycache__/
+# run history (JSON, reports) is committed so the agents learn from it; heavy/private files are not
+runs/*/source/
+runs/*/items/*/candidates/
+runs/*/items/*/qa_images/
+runs/*/items/*/*.jpg

@@ -4,7 +4,9 @@
   images/<קובץ>  ->  Pillow (1000x1000 WebP)  ->  Cloudinary (URL)  ->  POST לקונימבו
 
 שימוש:
-  python konimbo_upload.py shirt.jpg --title "חולצה כחולה" --price 99.90 --quantity 10
+  python konimbo_upload.py speaker.jpg --title "Legacy Aeris" --category "רמקולים" \\
+      --brand "Legacy Audio" --price 4290 --delivery-time "45 ימי עבודה" \\
+      --warranty "שנתיים" --shipping-cost 60
 
 משתני סביבה (או קובץ .env באותה תיקייה):
   KONIMBO_TOKEN            טוקן ה-API של קונימבו
@@ -26,7 +28,10 @@ from PIL import Image, ImageOps
 IMAGES_DIR = Path(__file__).parent / "images"
 SIZE = (1000, 1000)
 WEBP_QUALITY = 90
-KONIMBO_ITEMS_URL = "https://api.konimbo.co.il/items"
+KONIMBO_ITEMS_URL = "https://api.konimbo.co.il/v1/items"
+
+# מיפוי עלות משלוח -> shipping_option_ids (נוצרו ידנית בממשק קונימבו; ראה konimbo_automation_state)
+SHIPPING_IDS = {"": "72064", "60": "44488", "120": "44318"}
 
 
 def load_dotenv(path: Path) -> None:
@@ -101,22 +106,40 @@ def upload_to_cloudinary(data: bytes, public_id: str) -> str:
 
 
 def create_konimbo_item(args, image_url: str) -> dict:
-    """יצירת מוצר בקונימבו עם קישור התמונה."""
+    """יצירת מוצר בקונימבו (POST /v1/items) באותו מבנה של ה-workflow ב-n8n."""
     token = require_env("KONIMBO_TOKEN")
+    shipping_cost = args.shipping_cost.strip()
+    shipping_id = SHIPPING_IDS.get(shipping_cost)
+
+    icons = [{"image_title": "אייקון יבואן רשמי", "title": "יבואן רשמי",
+              "url": "/", "visible": "1", "index-visible": "0"}]
+    if shipping_cost == "":
+        icons.append({"image_title": "free shipping", "title": "משלוח חינם",
+                      "url": "/", "visible": "1", "index-visible": "0"})
+
     item = {
         "title": args.title,
+        "code": args.code or args.title,  # code קובע upsert: אותו מק"ט = עדכון
         "price": args.price,
-        "quantity": args.quantity,
+        "store_category_title": args.category,  # חייב להתאים בדיוק לקטגוריה קיימת
+        "brand": args.brand,
+        "delivery_time": args.delivery_time,
+        "warranty": args.warranty,
         "desc": args.desc,
-        "images": [{"url": image_url}],
+        "visible": True,
+        "zap_visable": True,  # האיות המקורי של קונימבו
+        "set_icons": icons,
+        "images": [{"url": image_url, "alt": args.title, "position": "1"}],
     }
-    if args.code:
-        item["code"] = args.code
+    if shipping_id:
+        item["shipping_option_ids"] = [shipping_id]
+    else:
+        print(f"אזהרה: עלות משלוח '{shipping_cost}' לא ממופה - יש להקצות משלוח ידנית")
 
     resp = requests.post(
         KONIMBO_ITEMS_URL,
         params={"token": token},
-        json=item,
+        json={"item": item},
         timeout=60,
     )
     if not resp.ok:
@@ -130,10 +153,15 @@ def main() -> None:
     p = argparse.ArgumentParser(description="העלאת מוצר + תמונה לקונימבו")
     p.add_argument("image", help="שם קובץ בתוך תיקיית images (או נתיב מלא)")
     p.add_argument("--title", required=True, help="שם המוצר")
-    p.add_argument("--price", required=True, type=float, help="מחיר")
-    p.add_argument("--quantity", type=int, default=1, help="כמות במלאי")
-    p.add_argument("--desc", default="", help="תיאור המוצר")
-    p.add_argument("--code", default="", help="מק\"ט")
+    p.add_argument("--category", required=True, help="קטגוריה (בדיוק כפי שקיימת בקונימבו)")
+    p.add_argument("--brand", required=True, help="יצרן")
+    p.add_argument("--price", required=True, help="מחיר צרכן כולל מע\"מ")
+    p.add_argument("--delivery-time", default="", help="זמן אספקה")
+    p.add_argument("--warranty", default="", help="אחריות")
+    p.add_argument("--shipping-cost", default="",
+                   help="עלות משלוח: ריק=חינם, 60, או 120")
+    p.add_argument("--desc", default="", help="תיאור המוצר (HTML)")
+    p.add_argument("--code", default="", help="מק\"ט (ברירת מחדל: שם המוצר)")
     p.add_argument("--crop", action="store_true", help="חיתוך למרכז במקום ריפוד לבן")
     p.add_argument("--dry-run", action="store_true",
                    help="רק אופטימיזציה ושמירה מקומית, בלי העלאה")

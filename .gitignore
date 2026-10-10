@@ -1,0 +1,3 @@
+.env
+images/*_optimized.webp
+__pycache__/

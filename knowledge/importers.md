@@ -2,8 +2,8 @@
 
 Filled as we learn. The importer's site is a source for Hebrew naming, the local variant
 (230V, finish availability) and cross-checking specs. The manufacturer's spec page/datasheet
-wins on technical values; if they disagree, the row is left out and noted for QA.
+wins on technical values; if they disagree on something critical, the row is left out and noted for QA; minor disagreements follow lessons.md (Daniel 2026-10-10).
 
 | Brand | Importer / supplier | Website | Notes |
 |---|---|---|---|
-| Onkyo | UNCONFIRMED | — | 2026-10-10: no Israeli importer website found. Daniel's supplier price list (מחירון יוני 2026, sheets ONKYO / integra / wiim / focal / NAIM) names no company; header says "אחריות לשנתיים". One marketplace listing (zap.co.il, store X-PRESS, TX-NR5100) says "שם נותן האחריות: שנה ע\"י ט.ר אלקטרו סטריאו" (12 months) — contradicts the supplier's 2 years, so it may be a different/parallel channel. Other IL retailers (stereoshop, homecinema.co.il) say only "יבואן רשמי/מורשה בישראל". Ask Daniel for the importer's name and site. |
+| Onkyo | ט.ר אלקטרו סטריאו (confirmed by Daniel 2026-10-10) | — (no website found) | Israel gets the EUROPEAN version (230V, FM/DAB+ tuner, IEC power ratings) — Daniel 2026-10-10. Warranty per Daniel's price list: שנתיים. The same supplier list also has sheets integra / wiim / focal / NAIM. |

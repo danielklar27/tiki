@@ -9,9 +9,31 @@
       "at": "2026-10-10 02:35:17",
       "stage": "image_hosted",
       "image_url": "https://res.cloudinary.com/o9cfph3q/image/upload/v1791599716/legacy-audio/products/onkyo-onkyo-tx-nr5100.jpg"
+    },
+    {
+      "at": "2026-10-10 02:39:58",
+      "stage": "payload_built",
+      "flags": [],
+      "errors": []
+    },
+    {
+      "at": "2026-10-10 02:40:36",
+      "stage": "payload_built",
+      "flags": [],
+      "errors": []
+    },
+    {
+      "at": "2026-10-10 02:40:41",
+      "stage": "uploaded_hidden",
+      "konimbo_id": "9649522",
+      "published": false
     }
   ],
-  "stage": "image_hosted",
+  "stage": "uploaded_hidden",
   "final_image": "/home/user/tiki/runs/2026-10-10-onkyo/items/2/final.jpg",
-  "image_url": "https://res.cloudinary.com/o9cfph3q/image/upload/v1791599716/legacy-audio/products/onkyo-onkyo-tx-nr5100.jpg"
+  "image_url": "https://res.cloudinary.com/o9cfph3q/image/upload/v1791599716/legacy-audio/products/onkyo-onkyo-tx-nr5100.jpg",
+  "flags": [],
+  "errors": [],
+  "konimbo_id": "9649522",
+  "published": false
 }

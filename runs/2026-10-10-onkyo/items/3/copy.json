@@ -1,0 +1,19 @@
+{
+  "brand_hebrew": "אונקיו",
+  "desc": "<p>אונקיו (Onkyo) TX-NR6100 הוא רסיבר רשת לקולנוע ביתי בתצורת 7.2 ערוצים עם הסמכת THX Certified Select, למי שרוצה מערכת אחת שמשרתת סרטים, משחקים ומוזיקה ברמה מוסמכת. הוא מנגן Dolby Atmos ו-DTS:X בפריסת 5.2.2, וכולל ארבעה מצבי האזנה של THX: קולנוע, גיימינג, מוזיקה ו-Surround EX.</p><ul><li><strong>שש כניסות HDMI</strong> — כניסות 1–3 ושתי היציאות מעבירות 8K/60 ו-4K/120 עם VRR, ALLM, QFT ו-QMS, כניסות 4–6 עד 4K/60, ו-eARC ביציאה הראשית. HDR10+ ו-Dolby Vision נתמכים.</li><li><strong>Zone 2 אמיתי</strong> — מגברים לרמקולי Zone 2 כשהחדר הראשי עובד ב-5.2 ערוצים, ומיתוג HDMI נפרד לחדר שני עם מקור משלו.</li><li><strong>כניסת פונו MM</strong> — אקולייזר פונו מובנה, כך שפטיפון עם ראש MM מתחבר ישירות לרסיבר.</li><li><strong>AccuEQ עם AccuReflex</strong> — כיול חדר באמצעות המיקרופון המצורף, והתאמת פאזה לרמקולי Atmos-enabled.</li><li><strong>רשת ו-Bluetooth</strong> — Chromecast built-in, AirPlay 2, DTS Play-Fi, Works with Sonos ו-Roon Tested, ו-Bluetooth שגם משדר לאוזניות ב-aptX HD.</li><li><strong>קבצים ברזולוציה גבוהה</strong> — ממירי D/A של 192kHz/24-bit, עם תמיכה ב-DSD256 וב-FLAC, ALAC, WAV ו-AIFF ב-192kHz/24-bit מהרשת ומ-USB.</li></ul><p>Dolby Surround ו-DTS Neural:X פורשים כל פסקול על פני כל הרמקולים במערכת, ו-Dolby Atmos Height Virtualizer ו-DTS Virtual:X נותנים תחושת גובה גם בלי רמקולי תקרה. מי שמחבר רמקולי Klipsch Reference או Reference Premiere ימצא ב-Klipsch Optimize Mode ערכי הצלבה מוכנים מראש.</p>",
+  "spec": [
+    {"group": "כללי", "name": "דגם", "value": "TX-NR6100", "fact_ref": "model"},
+    {"group": "כללי", "name": "הסמכת THX", "value": "THX Certified Select", "fact_ref": "thx"},
+    {"group": "כללי", "name": "ערוצים", "value": "7.2", "fact_ref": "channels"},
+    {"group": "שמע", "name": "פריסת Dolby Atmos / DTS:X", "value": "5.2.2", "fact_ref": "atmos_layout"},
+    {"group": "שמע", "name": "הספק יציאה", "value": "7 × 165W @ 6Ω (1kHz, 1% THD, ערוץ אחד פעיל, IEC) — דגם 230V", "fact_ref": "output_power"},
+    {"group": "חיבורים", "name": "HDMI", "value": "6 כניסות / 2 יציאות (Main Out עם eARC, Sub/Zone 2 Out)", "fact_ref": "hdmi"},
+    {"group": "חיבורים", "name": "כניסות שמע", "value": "4 × RCA אנלוגי, 1 × פונו MM, 1 × אופטי, 1 × קואקסיאלי, 1 × מיני-ג'ק 3.5 מ\"מ", "fact_ref": "audio_inputs"},
+    {"group": "חיבורים", "name": "אזורים", "value": "Zone 2 מוגבר (5.2 ערוצים בחדר הראשי + רמקולי Zone 2) או יציאת קו Zone 2 / Zone B; יציאת HDMI Sub/Zone 2", "fact_ref": "zones"},
+    {"group": "מידות ומשקל", "name": "מידות (ג×ר×ע)", "value": "173.5 × 435 × 379.5 מ\"מ", "fact_ref": "dimensions"},
+    {"group": "מידות ומשקל", "name": "משקל", "value": "9.8 ק\"ג", "fact_ref": "weight"}
+  ],
+  "seo_title": "רסיבר קולנוע ביתי Onkyo TX-NR6100 | Legacy Audio",
+  "seo_description": "Onkyo TX-NR6100: רסיבר רשת 7.2 בהסמכת THX Certified Select, שש כניסות HDMI עם 8K, Zone 2 מוגבר וכניסת פונו MM לפטיפון.",
+  "self_check": "Rules 1-7 checked against facts.json sentence by sentence; power is the 230V IEC rating with full conditions (no bare 210W, no wattage in desc); no price/warranty/delivery in desc; model spelled TX-NR6100; no sentence shared with row 2. Left out: tuner (Israeli variant unknown), finish (black only), DSC (in quote only), Alexa/Google (devices sold separately), SNR/frequency response/impedance/streaming list (10-row limit; streaming covered in desc)."
+}

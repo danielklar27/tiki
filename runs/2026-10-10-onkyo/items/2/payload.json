@@ -1,0 +1,102 @@
+{
+  "title": "Onkyo TX-NR5100 - רסיבר רשת אונקיו",
+  "code": "Onkyo TX-NR5100 - רסיבר רשת",
+  "price": "3999",
+  "store_category_title": "רסיבר לקולנוע ביתי",
+  "brand": "Onkyo",
+  "desc": "<p>TX-NR5100 של אונקיו (Onkyo) הוא רסיבר רשת לקולנוע ביתי בתצורת 7.2 ערוצים, למי שרוצה קולנוע ביתי עם Dolby Atmos וסטרימינג מלא באותו מכשיר. הוא מפענח Dolby Atmos ו-DTS:X בפריסה של 5.2.2 ערוצים, ומעביר וידאו 8K/60 ו-4K/120 דרך HDMI 2.1.</p><ul><li><strong>HDMI 2.1 לסרטים ולגיימינג</strong> — ארבע כניסות ושתי יציאות, עם HDR10+, Dolby Vision, VRR, ALLM ו-QFT, ו-eARC ביציאה הראשית לחיבור ישיר לטלוויזיה.</li><li><strong>כיול חדר AccuEQ</strong> — מיקרופון הכיול המצורף, AccuReflex ו-EQ ייעודי לסאבוופר מכווננים את המערכת לחדר שלכם.</li><li><strong>סטרימינג ומולטירום</strong> — Chromecast built-in, AirPlay 2, DTS Play-Fi ו-Works with Sonos, לצד Spotify, TIDAL, Deezer ו-Amazon Music HD מובנים ותאימות Roon Tested.</li><li><strong>Bluetooth דו-כיווני</strong> — קליטה מהטלפון ב-SBC/AAC, ושידור לאוזניות אלחוטיות ב-aptX ו-aptX HD.</li><li><strong>הגברה שלא נבהלת מ-4 אוהם</strong> — Dynamic Audio Amplification עם שנאי ייעודי בזרם גבוה ורעש נמוך, שמניע גם רמקולים בעכבה של 4Ω.</li><li><strong>שמע ברזולוציה גבוהה</strong> — המרת D/A ב-192kHz/24-bit, וניגון DSD256 ו-FLAC, ALAC, WAV ו-AIFF עד 192kHz/24-bit מהרשת ומ-USB.</li></ul><p>יציאת Zone B מעבירה את הסאונד של החדר הראשי למערכת נוספת או לעמדת אוזניות, ויציאת HDMI Sub מזינה מסך או מקרן שני. בעלי רמקולי Klipsch מסדרות Reference ו-Reference Premiere יכולים להפעיל את Klipsch Optimize Mode עם ערכי הצלבה מוגדרים מראש, וכשאין רמקולי גובה בחדר, Dolby Atmos Height Virtualizer ו-DTS Virtual:X מוסיפים מימד גובה וירטואלי.</p>",
+  "spec": [
+    {
+      "group": "כללי",
+      "name": "דגם",
+      "value": "TX-NR5100",
+      "position": "1"
+    },
+    {
+      "group": "כללי",
+      "name": "ערוצים",
+      "value": "7.2",
+      "position": "2"
+    },
+    {
+      "group": "שמע",
+      "name": "פריסת Dolby Atmos / DTS:X",
+      "value": "5.2.2",
+      "position": "3"
+    },
+    {
+      "group": "שמע",
+      "name": "הספק יציאה",
+      "value": "7 × 135W @ 6Ω (1kHz, 1% THD, ערוץ אחד פעיל, IEC) — דגם 230V",
+      "position": "4"
+    },
+    {
+      "group": "שמע",
+      "name": "עכבת רמקולים נתמכת",
+      "value": "4–16Ω",
+      "position": "5"
+    },
+    {
+      "group": "חיבורים",
+      "name": "HDMI",
+      "value": "4 כניסות / 2 יציאות (Main Out עם eARC, Sub Out)",
+      "position": "6"
+    },
+    {
+      "group": "חיבורים",
+      "name": "כניסות שמע",
+      "value": "3 × RCA אנלוגי, 1 × אופטי, 1 × קואקסיאלי, 1 × מיני-ג'ק 3.5 מ\"מ",
+      "position": "7"
+    },
+    {
+      "group": "חיבורים",
+      "name": "קישוריות",
+      "value": "Wi-Fi דו-תדרי 5GHz/2.4GHz (802.11ac); Bluetooth — קליטה SBC/AAC, שידור SBC/aptX/aptX HD",
+      "position": "8"
+    },
+    {
+      "group": "חיבורים",
+      "name": "סטרימינג",
+      "value": "Chromecast built-in, AirPlay 2, DTS Play-Fi, Works with Sonos; Spotify, Amazon Music HD, TIDAL, Deezer, TuneIn, Pandora; Roon Tested",
+      "position": "9"
+    },
+    {
+      "group": "מידות ומשקל",
+      "name": "מידות (ג×ר×ע)",
+      "value": "160 × 435 × 328 מ\"מ",
+      "position": "10"
+    }
+  ],
+  "visible": false,
+  "zap_visable": false,
+  "set_icons": [
+    {
+      "image_title": "אייקון יבואן רשמי",
+      "title": "יבואן רשמי",
+      "url": "/",
+      "visible": "1",
+      "index-visible": "0"
+    },
+    {
+      "image_title": "free shipping",
+      "title": "משלוח חינם",
+      "url": "/",
+      "visible": "1",
+      "index-visible": "0"
+    }
+  ],
+  "warranty": "שנתיים",
+  "delivery_time": 7,
+  "shipping_option_ids": [
+    "72064"
+  ],
+  "images": [
+    {
+      "url": "https://res.cloudinary.com/o9cfph3q/image/upload/v1791599716/legacy-audio/products/onkyo-onkyo-tx-nr5100.jpg",
+      "alt": "Onkyo TX-NR5100 - רסיבר רשת אונקיו",
+      "position": "1"
+    }
+  ],
+  "seo_title": "רסיבר קולנוע ביתי Onkyo TX-NR5100 | Legacy Audio",
+  "seo_description": "רסיבר רשת Onkyo TX-NR5100 בתצורת 7.2 עם Dolby Atmos ו-DTS:X, HDMI 2.1 עם 8K ו-4K/120, כיול AccuEQ וסטרימינג ב-Chromecast וב-AirPlay 2."
+}

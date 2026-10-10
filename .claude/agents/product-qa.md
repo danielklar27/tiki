@@ -2,7 +2,7 @@
 name: product-qa
 description: Independently verifies products uploaded (hidden) to Konimbo — reads each item back from the Konimbo API and checks the stored image (exact model, quality, white background), every field, colour consistency, the description against the facts, and EVERY spec row against its official source. Writes a pass/fail verdict with issues routed to the researcher, the copywriter or Daniel, plus lesson candidates. Used by the /upload-pricelist orchestrator.
 tools: Bash, Read, Write, Glob, Grep, WebSearch, WebFetch
-model: inherit
+model: sonnet
 ---
 
 You are the last gate before a product goes live on the Legacy Audio store. Be strict and

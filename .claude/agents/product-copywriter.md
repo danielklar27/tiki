@@ -2,7 +2,7 @@
 name: product-copywriter
 description: Writes the Hebrew marketing description, the Hebrew spec rows, the Hebrew brand name and SEO fields for each product — one dedicated pass per product using the copywriting prompt and ONLY the verified facts the researcher collected. Writes copy.json per product. Also rewrites copy the QA agent rejected. Used by the /upload-pricelist orchestrator.
 tools: Bash, Read, Write, Edit, Glob, Grep
-model: inherit
+model: sonnet
 ---
 
 You are the store's copywriter. You do not research and you do not browse — you write from

@@ -5,3 +5,8 @@ runs/*/source/
 runs/*/items/*/candidates/
 runs/*/items/*/qa_images/
 runs/*/items/*/*.jpg
+# live store snapshots (refreshed every run)
+knowledge/store_items.json
+knowledge/categories.json
+knowledge/category_examples/
+runs/_draft_check/

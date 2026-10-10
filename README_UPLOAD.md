@@ -12,10 +12,11 @@
 |---|---|
 | `.claude/skills/upload-pricelist/SKILL.md` | המנהל — מריץ את כל השלבים |
 | `.claude/agents/pricelist-agent.md` | מחירון → שיטס + שאלות |
-| `.claude/agents/product-uploader.md` | מחקר, תמונה, תיאור, העלאה מוסתרת, תיקונים |
-| `.claude/agents/product-qa.md` | בדיקה עצמאית של כל מוצר שעלה |
-| `tools/kon.py` | כלים קבועים: API קונימבו, עיבוד תמונות, Cloudinary, דוח |
-| `knowledge/` | ידע מצטבר: API, תקן תמונות, מותגים, לקחים |
+| `.claude/agents/product-researcher.md` | עובדות מאומתות עם מקור + תמונה של הדגם המדויק |
+| `.claude/agents/product-copywriter.md` | תיאור שיווקי, מפרט בעברית ו-SEO — קריאה ייעודית לכל מוצר |
+| `.claude/agents/product-qa.md` | בדיקה עצמאית של כל מוצר שעלה, כולל כל שורת מפרט מול המקור |
+| `tools/kon.py` | כלים קבועים: API קונימבו, תמונות, Cloudinary, ולידציה, כפילויות, דוחות |
+| `knowledge/` | ידע מצטבר: API, תקן תמונות, פרומפט קופי, מילון מפרט, מותגים, יבואנים, לקחים, טבלת התאמה ל-n8n |
 | `runs/<run>/` | היסטוריית ריצות (JSON ודוחות) |
 
 ## הגדרה חד-פעמית

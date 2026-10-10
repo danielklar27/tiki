@@ -6,7 +6,7 @@ quality, and above all **of the exact product being uploaded — not another mod
 series in the same line.** A wrong-model image is worse than no image.
 
 ## Hard gates (an image that fails any of these is rejected)
-1. **Exact model match.** Evidence is required and recorded in `research.json`:
+1. **Exact model match.** Evidence is required and recorded in `facts.json` (`image` block):
    - the source page is the product page of exactly this model (title/URL/heading name the model), and
    - the image is the product image of that page (not a related product / "you may also like"), and
    - visible distinguishing features match (driver count/layout, ports, knobs, display, finish,
@@ -21,7 +21,7 @@ series in the same line.** A wrong-model image is worse than no image.
 2. Front 3/4 view if the front view is not available or clearly less flattering.
 3. Colour/finish matching the sheet (if the sheet names a finish, the image must show it).
 
-## Source priority
+## Source priority (the sheet's column K link, if present, is checked first — still must prove the model)
 1. Manufacturer's official product page (`page-images`) — known domains in `brands.md`.
 2. Manufacturer press/media kit or Israeli importer page.
 3. Large authorised retailers with clean packshots (e.g. Crutchfield, Thomann, B&H, Richer Sounds, Audio Advice).

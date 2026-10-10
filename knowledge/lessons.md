@@ -14,6 +14,7 @@ dated, concrete ("do X / never Y because Z"). Remove a lesson only when Daniel s
 - 2026-10-10 — A product that already exists in the store is SKIPPED, no question asked. Exception: same model but a different finish is NOT a duplicate (finishes are separate products) — if unsure, ask.
 - 2026-10-10 — Minor disagreements between the manufacturer's own sources (e.g. weight 8.4 vs 8.5 kg) are NOT a reason to drop a spec row: use the manufacturer's product page value (else the manual). Leave a row out only when the difference is critical (power, channels, connectivity, compatibility).
 - 2026-10-10 — When a product has regional versions, Israel gets the EUROPEAN one (230V, EU tuner such as FM/DAB+, IEC ratings) unless Daniel says otherwise — use the European spec, don't drop the row.
+- 2026-10-10 — Whenever anything in a sheet is uncertain (a missing/unclear value, an odd price, ambiguous finish/category/warranty/delivery), ASK Daniel — one AskUserQuestion batch before the sheet goes to him. Never guess to avoid asking.
 
 ## From the first Onkyo pilot (2026-10-10)
 - 2026-10-10 — The store index used to read only page 1 (20 of ~1935 items), so find-existing missed live duplicates and two already-existing receivers were uploaded again (hidden). `store-index` now walks every page; if its count is ever ~20 again, STOP — the duplicate check is blind.

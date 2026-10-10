@@ -50,8 +50,9 @@ For each row: `kon.py build-item --run R --row N` (exit 2 = blocking errors → 
 responsible agent, never upload) → `kon.py kon-upsert --run R --row N`.
 
 ## Phase 6 — QA, routed fixes, publish
-1. `product-qa` on the same batches (round 1).
-2. For failed rows route `fix_for`: researcher items → `product-researcher` (fix mode),
+1. `product-qa` on the same batches (round 1). QA repairs by itself what it can prove from a
+   source (listed in `qa.json` → `fixed`; mention these in the report) and re-verifies.
+2. Only for rows still failing after that, route `fix_for`: researcher items → `product-researcher` (fix mode),
    copywriter items → `product-copywriter` (fix mode), then Phase 5 again for those rows, then
    QA round 2. Max 2 fix rounds. `fix_for.daniel` items are collected for the final message
    (ask them together, not one by one).

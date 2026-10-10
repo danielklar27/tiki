@@ -12,6 +12,13 @@ dated, concrete ("do X / never Y because Z"). Remove a lesson only when Daniel s
 - 2026-10-10 — Minor disagreements between the manufacturer's own sources (e.g. weight 8.4 vs 8.5 kg) are NOT a reason to drop a spec row: use the manufacturer's product page value (else the manual). Leave a row out only when the difference is critical (power, channels, connectivity, compatibility).
 - 2026-10-10 — When a product has regional versions, Israel gets the EUROPEAN one (230V, EU tuner such as FM/DAB+, IEC ratings) unless Daniel says otherwise — use the European spec, don't drop the row.
 
+## From the first Onkyo pilot (2026-10-10)
+- 2026-10-10 — The store index used to read only page 1 (20 of ~1935 items), so find-existing missed live duplicates and two already-existing receivers were uploaded again (hidden). `store-index` now walks every page; if its count is ever ~20 again, STOP — the duplicate check is blind.
+- 2026-10-10 — Konimbo here addresses items by CODE only (`/items/0?code=`); `kon.py` resolves ids to codes via store_items.json. Never call `/items/{id}` directly.
+- 2026-10-10 — Onkyo EMEA spec sheets list "1*jack 3.5mm" under audio inputs — it is the AccuEQ setup-mic jack, NOT an audio input. Check input lists against the manual's panel pages.
+- 2026-10-10 — US-only streaming services (Pandora, SiriusXM) never go into specs for the European/Israeli unit.
+- 2026-10-10 — SEO text must keep qualifiers: 8K on HDMI inputs 1–3 is not "six HDMI inputs with 8K".
+
 ## From the old n8n automation (2026-07 → 2026-10)
 - 2026-10-10 — Images almost never landed (~1 in 100). Likely causes, all designed out:
   1. Searching Google Images with the raw sheet name (sizes, Hebrew) → weak results. Search by brand + exact model.

@@ -1,0 +1,47 @@
+{
+  "verdict": "fail",
+  "round": 1,
+  "konimbo_id": "9649522",
+  "checks": {
+    "image": "pass (תמונה אחת; העותק השמור ב-Konimbo 1000×1000 JPEG חד, רקע לבן מלא border_white_ratio=1.0, חזית, ללא טקסט/סימן מים; מקור Onkyo-TX-NR5100B_FR.jpg 2000×2000 מגלריית onkyo.com/receivers/tx-nr5100)",
+    "model_match": "pass (לוח קדמי 'AV RECEIVER TX-NR5100', מקש ZONE A/B, אין מקש PHONO, אין USB קדמי, אין לוגו DAA — שולל TX-NR6100; זהה לתמונה הרשמית)",
+    "spec_rows": "fail (8/10 verified) — כניסות שמע, סטרימינג",
+    "description": "pass",
+    "fields": "pass",
+    "colour": "pass (שחור בלבד; אין גימור בשם; תמונה שחורה)",
+    "seo": "pass (title 48, description 134)"
+  },
+  "issues": [
+    "שורת מפרט 'כניסות שמע' (חיבורים) כוללת '1 × מיני-ג'ק 3.5 מ\"מ' — אין ל-TX-NR5100 כניסת שמע 3.5 מ\"מ. לפי המדריך הרשמי (txnr5100_en.pdf, Part Names): בפאנל האחורי AUDIO IN (AUDIO 1–3) ו-DIGITAL IN OPTICAL/COAXIAL; בפאנל הקדמי רק PHONES (6.3 מ\"מ) ו-SETUP MIC. ה-'1*jack 3.5mm' בגיליון EMEA הוא שקע מיקרופון הכיול (גיליון ה-US של TX-NR6100 מאותה סדרה מפרש: '1/8\" (3.5 mm) mic input for AccuEQ setup'). הערך הנכון: 3 × RCA אנלוגי, 1 × אופטי, 1 × קואקסיאלי.",
+    "שורת מפרט 'סטרימינג' כוללת Pandora — לא מופיע במקור המצוטט (EMEA Spec Sheet) וגם לא במדריך; מופיע רק בדף ה-US (דגם 120V). Pandora הוא שירות שזמין רק בארה\"ב ואינו רלוונטי לגרסה האירופית שנמכרת בישראל. הערך לא ניתן למעקב מול fact_ref=streaming."
+  ],
+  "fix_for": {
+    "researcher": [
+      "facts.json spec_facts.audio_inputs: לתקן ל-'3 × analog RCA, 1 × optical, 1 × coaxial' עם מקור המדריך https://assets.onkyo-av.com/product-manuals/txnr5100_en.pdf (Rear Panel: AUDIO IN 1–3, DIGITAL IN OPTICAL/COAXIAL; Front Panel: PHONES 6.3mm + SETUP MIC בלבד). להוסיף הערה שה-'jack 3.5mm' ב-EMEA הוא שקע המיקרופון.",
+      "facts.json spec_facts.streaming: להסיר Pandora (לא ב-EMEA, שירות US בלבד) — הערך צריך להיות בדיוק רשימת ה-EMEA: Amazon Music HD, Spotify, TIDAL, Roon Tested, Deezer, TuneIn, Works with Sonos, AirPlay 2, DTS Play-Fi, Chromecast built-in.",
+      "אופציונלי (עובדות חסרות): משקל 8.4 ק\"ג — המדריך ו-onkyo.com מסכימים (EMEA בלבד אומר 8.5); טיונר FM/DAB+ — importers.md מאשר עכשיו שישראל מקבלת את הגרסה האירופית."
+    ],
+    "copywriter": [
+      "spec 'כניסות שמע' → '3 × RCA אנלוגי, 1 × אופטי, 1 × קואקסיאלי' (להסיר את המיני-ג'ק).",
+      "spec 'סטרימינג' → להסיר Pandora.",
+      "אופציונלי: במשפט הפתיחה 'קולנוע ביתי' מופיע פעמיים ('רסיבר רשת לקולנוע ביתי ... למי שרוצה קולנוע ביתי עם Dolby Atmos') — לנסח מחדש. אופציונלי: לציין ש-Works with Sonos דורש Sonos Port (נמכר בנפרד), כמו בדף היצרן."
+    ],
+    "daniel": [
+      "כפילות: TX-NR5100 כבר קיים ופעיל בחנות — https://www.legacy.co.il/items/9485298 ('רסיבר רשת ONKYO TX-NR5100 אונקיו', 2,999 ₪, מופיע גם ב-zap תחת 'לגאסי'). לפי ההחלטה הקבועה מוצר קיים מדלגים עליו — הפריט המוסתר 9649522 לא אמור להתפרסם. נדרשת החלטה: לזרוק את 9649522 (סוכנים לא מוחקים) או לעדכן את הפריט הקיים (מחיר/תמונה/תוכן) במקומו.",
+      "מחיר: במחירון 3,999 ₪ מול 2,999 ₪ בפריט הקיים בחנות — 33% יותר. האם המחירון החדש (יוני 2026) מעלה את המחיר, או שזו טעות?"
+    ]
+  },
+  "warnings": [
+    "מחיר: zap (19 חנויות) 2,880–4,080 ₪, בשני אשכולות — 9 חנויות ב-2,880–2,999 (כולל לגאסי עצמה ב-2,999) ו-8 ב-3,649–4,080. 3,999 גבוה ב-33% מהפריט הקיים בחנות ומהאשכול הזול; תואם לאשכול היקר.",
+    "כפילות: אותו דגם קיים בחנות כ-9485298 (ראו fix_for.daniel). store_items.json כולל רק 20 פריטים ולכן בדיקת find-existing לא תפסה זאת.",
+    "קריאה חוזרת מ-Konimbo: GET /items/9649522 מחזיר 404; הפריט נקרא דרך lookup לפי code ('Onkyo TX-NR5100 - רסיבר רשת') וה-id תואם (9649522). visible=false, zap_visable=false.",
+    "שדות שאומתו מול השורה המאושרת: title='Onkyo TX-NR5100 - רסיבר רשת אונקיו', price=3999, קטגוריה 'רסיבר לקולנוע ביתי' (הורה 'הגברה'), brand Onkyo, warranty 'שנתיים', delivery_time=7, shipping_option_ids=[72064], אייקונים 'יבואן רשמי' + 'משלוח חינם'.",
+    "8 שורות המפרט האחרות אומתו: דגם, 7.2, 5.2.2 (onkyo.com), הספק 7 × 135W @6Ω 1kHz 1% THD IEC (המדריך, עמודת European/Asian, + EMEA), 4–16Ω, HDMI 4/2 (Main eARC + Sub), Wi-Fi/Bluetooth (onkyo.com + המדריך), מידות 160×435×328 מ\"מ (EMEA + onkyo.com)."
+  ],
+  "lesson_candidates": [
+    "מפרטי EMEA של Onkyo מציינים '1*jack 3.5mm' תחת Audio Inputs — זה שקע מיקרופון הכיול (AccuEQ), לא כניסת שמע (גיליון ה-US: '1/8\" (3.5 mm) mic input for AccuEQ setup'). לעולם לא לרשום אותו ככניסת שמע; לאמת רשימת כניסות מול פרק Rear/Front Panel במדריך.",
+    "ערך מפרט שמורכב משני מקורות (EMEA + דף US) חייב לצטט את שניהם; שירותים שזמינים רק בארה\"ב (Pandora, SiriusXM וכד') לא נכנסים למפרט של הדגם האירופי/הישראלי.",
+    "knowledge/store_items.json הכיל 20 פריטים בלבד ופספס אצוות Onkyo שלמה שכבר באוויר (9485291–9485310, כולל TX-NR5100=9485298 ו-TX-NR6100=9485310). בדיקת כפילויות חייבת לרוץ מול אינדקס חנות מלא ועדכני (לרענן store-index לפני כל ריצה, ולוודא שמספר הפריטים סביר), עם בדיקת גיבוי ב-legacy.co.il או בהצעות 'לגאסי' ב-zap, לפני שמתחילים מחקר.",
+    "ב-Konimbo, GET /items/{id} מחזיר 404 'Item with code <id> was not found' עבור הטוקן הנוכחי (גם לפריטים קיימים). QA חייב לקרוא בחזרה עם kon-get --code <code> ולוודא שה-id שחוזר תואם ל-status.json; כדאי לתקן את kon-get --id או לתעד זאת ב-konimbo_api.md."
+  ]
+}

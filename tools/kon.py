@@ -13,6 +13,7 @@ Secrets come from env vars (or a .env file at the repo root, never committed):
     SERPAPI_KEY (optional fallback image search)
 """
 import argparse
+import contextlib
 import csv
 import hashlib
 import html
@@ -225,11 +226,28 @@ def cmd_categories(a):
     out({"count": len(titles), "titles": titles})
 
 
+def code_for_id(item_id):
+    """This store has lookup-by-code enabled: /items/{x} treats x as a CODE, never an id.
+    Resolve an id to its code via the store snapshot (refreshed once if the id is missing)."""
+    for attempt in (0, 1):
+        for it in read_json(KNOWLEDGE / "store_items.json", []) or []:
+            if str(it.get("id")) == str(item_id):
+                if not it.get("code"):
+                    die(f"item {item_id} has no code — cannot address it through the API")
+                return it["code"]
+        if attempt == 0:
+            with contextlib.redirect_stdout(io.StringIO()):
+                cmd_store_index(None)
+    die(f"item id {item_id} not found in the store")
+
+
+def kon_item(method, item_id=None, code=None, item=None):
+    code = code or code_for_id(item_id)
+    return kon_request(method, "/items/0", item=item, params={"code": code})
+
+
 def cmd_kon_get(a):
-    if a.code:
-        _, data = kon_request("GET", "/items/0", params={"code": a.code})
-    else:
-        _, data = kon_request("GET", f"/items/{a.id}")
+    _, data = kon_item("GET", item_id=a.id, code=a.code)
     if a.run and a.row:
         write_json(item_dir(a.run, a.row) / "konimbo_live.json", data)
     out(data)
@@ -237,7 +255,7 @@ def cmd_kon_get(a):
 
 def cmd_kon_update(a):
     item = read_json(a.file)
-    _, data = kon_request("PUT", f"/items/{a.id}", item=item)
+    _, data = kon_item("PUT", item_id=a.id, item=item)
     out(data)
 
 
@@ -245,7 +263,9 @@ def cmd_kon_publish(a):
     visible = not a.hide
     results = []
     for item_id in a.ids:
-        _, data = kon_request("PUT", f"/items/{item_id}", item={"visible": visible, "zap_visable": visible})
+        _, data = kon_item("PUT", item_id=item_id, item={"visible": visible, "zap_visable": visible})
+        if str(data.get("id")) != str(item_id):
+            die(f"code lookup for {item_id} returned item {data.get('id')} — stopped", results=results)
         results.append({"id": item_id, "visible": data.get("visible")})
     if a.run:
         for p in load_products(a.run):
@@ -263,12 +283,25 @@ def norm(text):
 
 def cmd_store_index(a):
     """Snapshot of every item in the store — used for duplicate detection."""
-    _, data = kon_request("GET", "/items", params={
-        "attributes": "id,title,code,brand,store_category_title,visible"})
-    items = data if isinstance(data, list) else data.get("items", data)
+    # /items returns 20 per page and ignores per_page/limit — walk ?page= until an empty page
+    items, seen, page = [], set(), 1
+    while True:
+        code, data = kon_request("GET", "/items", params={
+            "attributes": "id,title,code,brand,store_category_title,visible,price", "page": page},
+            fatal=False)
+        if code == 404:   # past the last page
+            break
+        if code != 200:
+            die(f"Konimbo GET /items page {page} -> HTTP {code}", response=data)
+        batch = data if isinstance(data, list) else data.get("items", [])
+        new = [it for it in batch if it.get("id") not in seen]
+        if not new:
+            break
+        seen.update(it.get("id") for it in new)
+        items.extend(new)
+        page += 1
     write_json(KNOWLEDGE / "store_items.json", items)
-    out({"count": len(items), "path": str(KNOWLEDGE / "store_items.json"),
-         "note": "if count looks capped (e.g. exactly 50/100), the endpoint paginates — record in lessons.md"})
+    out({"count": len(items), "pages": page - 1, "path": str(KNOWLEDGE / "store_items.json")})
 
 
 def find_existing(products, items):

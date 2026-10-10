@@ -9,9 +9,10 @@ The token is NEVER written in this repo. It comes from the `KONIMBO_TOKEN` env v
 | Method | Path | Use |
 |---|---|---|
 | POST | `/items` | create — or update if `code` already exists (upsert) |
-| GET | `/items/{id}` | read one item (needs READ permission) |
+| GET | `/items/{id}` | **does not work in this store** — lookup-by-code is on, so `{x}` is treated as a CODE (404 for an id). Use `/items/0?code=` |
 | GET | `/items/0?code={code}` | read by code (lookup-by-code must be enabled by Konimbo support) |
-| PUT | `/items/{id}` | partial update (send only changed fields) |
+| PUT | `/items/0?code={code}` | partial update (send only changed fields). `PUT /items/{id}` → 404 here (verified 2026-10-10) |
+| GET | `/items?page=N` | list, 20 per page (`per_page`/`limit`/`offset` ignored); past the last page → **404** "There are no items for your query" |
 | GET | `/store_categories` | list categories (`title_he`, `id`, `parent_id`) |
 | DELETE | `/items/{id}` | move to trash (restorable) — agents never call this |
 

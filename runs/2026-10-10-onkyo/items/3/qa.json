@@ -1,0 +1,44 @@
+{
+  "verdict": "fail",
+  "round": 1,
+  "konimbo_id": "9649523",
+  "checks": {
+    "image": "pass (תמונה אחת; העותק השמור ב-Konimbo 1000×1000 JPEG חד, רקע לבן מלא border_white_ratio=1.0, חזית, ללא טקסט/סימן מים; מקור Onkyo-TX-NR6100-Front-Panel.jpg 2000×2000 מגלריית onkyo.com/receivers/tx-nr6100)",
+    "model_match": "pass (לוח קדמי 'AV RECEIVER TX-NR6100', תצוגת 'THX Cinema', מקש PHONO, מקש ZONE 2, USB קדמי ליד SETUP MIC, לוגו Dynamic Audio Amplification — שולל TX-NR5100; זהה לתמונה הרשמית)",
+    "spec_rows": "fail (9/10 verified) — כניסות שמע",
+    "description": "pass",
+    "fields": "pass",
+    "colour": "pass (שחור בלבד; אין גימור בשם; תמונה שחורה)",
+    "seo": "fail — seo_description: 'שש כניסות HDMI עם 8K'"
+  },
+  "issues": [
+    "שורת מפרט 'כניסות שמע' (חיבורים) כוללת '1 × מיני-ג'ק 3.5 מ\"מ' — אין ל-TX-NR6100 כניסת שמע 3.5 מ\"מ. גיליון ה-US הרשמי (TX-NR6100_US_2022-11-02-210644_imld.pdf) מפרש את השקע: '1/8\" (3.5 mm) mic input for AccuEQ setup', ומונה '4 analog RCA audio inputs' + '1 phono input'. גם המדריך (Analog Audio Input) מכיר רק AUDIO 1–4 + PHONO. הערך הנכון: 4 × RCA אנלוגי, 1 × פונו MM, 1 × אופטי, 1 × קואקסיאלי.",
+    "seo_description אומר 'שש כניסות HDMI עם 8K' — רק כניסות 1–3 תומכות 8K/60 ו-4K/120; כניסות 4–6 מוגבלות ל-4K/60 (onkyo.com + גיליון ה-US). הניסוח מטעה (בתיאור עצמו זה מנוסח נכון)."
+  ],
+  "fix_for": {
+    "researcher": [
+      "facts.json spec_facts.audio_inputs: לתקן ל-'4 × analog RCA, 1 × phono MM, 1 × optical, 1 × coaxial' עם מקור גיליון ה-US https://assets.onkyo-av.com/spec-sheets/TX-NR6100_US_2022-11-02-210644_imld.pdf ('4 analog RCA audio inputs', '1 phono input', '1/8\" (3.5 mm) mic input for AccuEQ setup') ומדריך SN29403926A (AUDIO 1–4 + PHONO). להוסיף הערה שה-'jack 3.5mm' ב-EMEA הוא שקע המיקרופון.",
+      "אופציונלי (עובדה חסרה): טיונר FM/DAB+ — importers.md מאשר עכשיו שישראל מקבלת את הגרסה האירופית."
+    ],
+    "copywriter": [
+      "spec 'כניסות שמע' → '4 × RCA אנלוגי, 1 × פונו MM, 1 × אופטי, 1 × קואקסיאלי' (להסיר את המיני-ג'ק).",
+      "seo_description: להחליף 'שש כניסות HDMI עם 8K' בניסוח מדויק, למשל 'HDMI 2.1 עם 8K/60 ו-4K/120', ולהישאר עד 155 תווים."
+    ],
+    "daniel": [
+      "כפילות: TX-NR6100 כבר קיים ופעיל בחנות — https://www.legacy.co.il/items/9485310 ('רסיבר רשת ONKYO TX-NR6100 אונקיו', 4,600 ₪, מופיע גם ב-zap תחת 'לגאסי'). לפי ההחלטה הקבועה מוצר קיים מדלגים עליו — הפריט המוסתר 9649523 לא אמור להתפרסם. נדרשת החלטה: לזרוק את 9649523 (סוכנים לא מוחקים) או לעדכן את הפריט הקיים במקומו (התמונה הקיימת שם היא WebP)."
+    ]
+  },
+  "warnings": [
+    "מחיר תקין: zap (16 חנויות) 3,890–4,889 ₪; רוב החנויות, כולל לגאסי עצמה, ב-4,600 — זהה למחירון.",
+    "כפילות: אותו דגם קיים בחנות כ-9485310 (ראו fix_for.daniel). store_items.json כולל רק 20 פריטים ולכן בדיקת find-existing לא תפסה זאת. בנוסף יש בחנות TX-NR7100 (9485295) ופריטי Onkyo נוספים מאותה אצווה — לבדוק אותם לפני השורות הבאות במחירון.",
+    "קריאה חוזרת מ-Konimbo: GET /items/9649523 מחזיר 404; הפריט נקרא דרך lookup לפי code ('Onkyo TX-NR6100 - רסיבר רשת THX') וה-id תואם (9649523). visible=false, zap_visable=false.",
+    "שדות שאומתו מול השורה המאושרת: title='Onkyo TX-NR6100 - רסיבר רשת THX אונקיו', price=4600, קטגוריה 'רסיבר לקולנוע ביתי' (הורה 'הגברה'), brand Onkyo, warranty 'שנתיים', delivery_time=7, shipping_option_ids=[72064], אייקונים 'יבואן רשמי' + 'משלוח חינם'.",
+    "9 שורות המפרט האחרות אומתו: דגם, THX Certified Select, 7.2 (EMEA), 5.2.2 (onkyo.com), הספק 7 × 165W @6Ω 1kHz 1% THD IEC (המדריך, עמודת European/Asian, + EMEA), HDMI 6/2 (Main eARC + Sub/Zone 2), אזורים (onkyo.com + גיליון US), מידות 173.5×435×379.5 מ\"מ ומשקל 9.8 ק\"ג (EMEA + onkyo.com + המדריך)."
+  ],
+  "lesson_candidates": [
+    "מפרטי EMEA של Onkyo מציינים '1*jack 3.5mm' תחת Audio Inputs — זה שקע מיקרופון הכיול (AccuEQ), לא כניסת שמע (גיליון ה-US: '1/8\" (3.5 mm) mic input for AccuEQ setup'). לעולם לא לרשום אותו ככניסת שמע; לאמת רשימת כניסות מול פרק Rear/Front Panel במדריך.",
+    "knowledge/store_items.json הכיל 20 פריטים בלבד ופספס אצוות Onkyo שלמה שכבר באוויר (9485291–9485310, כולל TX-NR5100=9485298 ו-TX-NR6100=9485310). בדיקת כפילויות חייבת לרוץ מול אינדקס חנות מלא ועדכני (לרענן store-index לפני כל ריצה, ולוודא שמספר הפריטים סביר), עם בדיקת גיבוי ב-legacy.co.il או בהצעות 'לגאסי' ב-zap, לפני שמתחילים מחקר.",
+    "ב-Konimbo, GET /items/{id} מחזיר 404 'Item with code <id> was not found' עבור הטוקן הנוכחי (גם לפריטים קיימים). QA חייב לקרוא בחזרה עם kon-get --code <code> ולוודא שה-id שחוזר תואם ל-status.json; כדאי לתקן את kon-get --id או לתעד זאת ב-konimbo_api.md.",
+    "תיאור SEO לא מכווץ טענה מסויגת לטענה כללית (למשל 8K רק בכניסות 1–3 ≠ 'שש כניסות HDMI עם 8K')."
+  ]
+}

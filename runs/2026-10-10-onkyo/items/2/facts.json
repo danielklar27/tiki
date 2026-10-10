@@ -1,0 +1,216 @@
+{
+  "model_confirmed": "TX-NR5100",
+  "distinguishing_features": "Onkyo NR-series 2022 generation, 7.2-ch, NO THX (THX is the NR6100/NR7100), 4 HDMI in / 2 out, Zone B (not powered Zone 2), no phono input, no front USB (USB is rear only), front panel printed 'AV RECEIVER TX-NR5100', input row BD/DVD-GAME-CBL/SAT-STRM BOX-PC-AUX-CD-TV-TUNER-NET-BLUETOOTH (no PHONO key), button above first input key reads 'ZONE A/B'. Not to be confused with predecessor TX-NR696 / TX-NR5100's sibling TX-NR6100. 230V (European/Asian) variant applies in Israel; black only.",
+  "product_page": "https://onkyo.com/receivers/tx-nr5100",
+  "page_title": "TX-NR5100 7.2-Channel AV Receiver | Onkyo",
+  "datasheet": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf",
+  "importer_page": "",
+  "spec_facts": {
+    "model": {
+      "label": "Model",
+      "value": "TX-NR5100",
+      "source": "https://onkyo.com/receivers/tx-nr5100",
+      "quote": "TX-NR5100 7.2-Channel AV Receiver"
+    },
+    "channels": {
+      "label": "Channels",
+      "value": "7.2",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf",
+      "quote": "TX-NR5100 7.2-Channel Network A/V Receiver"
+    },
+    "atmos_layout": {
+      "label": "Dolby Atmos / DTS:X layout",
+      "value": "5.2.2",
+      "source": "https://onkyo.com/receivers/tx-nr5100",
+      "quote": "5.2.2-ch Dolby Atmos® and DTS: X® playback"
+    },
+    "output_power": {
+      "label": "Output power",
+      "value": "7 × 135W @ 6Ω (1kHz, 1% THD, 1 channel driven, IEC) — European/Asian 230V models",
+      "source": "https://assets.onkyo-av.com/product-manuals/txnr5100_en.pdf",
+      "quote": "Rated Output Power ... European models / Australian and Asian models: 7 ch × 135 W at 6 ohms, 1 kHz, 1 ch driven of 1% THD (IEC)  [EMEA spec sheet agrees: \"135 W/Ch (6 Ω, 1 kHz, 1%, 1 Channel Driven, IEC)\"]"
+    },
+    "frequency_response": {
+      "label": "Frequency response",
+      "value": "10Hz – 100kHz (+1dB/−3dB, Direct/Pure Audio)",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf",
+      "quote": "Frequency Response 10 Hz–100 kHz/+1 dB, -3 dB (Direct/Pure Audio)"
+    },
+    "snr": {
+      "label": "Signal-to-noise ratio",
+      "value": "106dB (Line, IHF-A)",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf",
+      "quote": "Signal-to-Noise Ratio 106 dB (Line, IHF-A)"
+    },
+    "speaker_impedance": {
+      "label": "Speaker impedance",
+      "value": "4–16Ω",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf",
+      "quote": "Speaker impedance 4-16 Ω"
+    },
+    "hdmi": {
+      "label": "HDMI inputs / outputs",
+      "value": "4 in / 2 out (Main Out with eARC + Sub Out)",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf",
+      "quote": "HDMI In/Out 4 / 2"
+    },
+    "video": {
+      "label": "Video (HDMI 2.1)",
+      "value": "8K/60p and 4K/120p passthrough on HDMI inputs 1–3 and Main/Sub out; HDR10+, Dolby Vision, BT.2020; VRR, ALLM, QFT; eARC (Main Out); HDCP 2.3",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf",
+      "quote": "HDMI® inputs 1-3 and Main/Sub outpus support 8K/60p(4:2:0/10-bit), 8K/30p(4:4:4/10-bit), 4K/120p(4:4:4/10-bit) video pass through. HDMI terminals support HDR10+, Dolby Vision and BT.2020 color; VRR (Variable Refresh Rate), ALLM (Auto Low Latency Mode), and QFT (Quick Frame Transport) passthrough; eARC (Main Out), and HDCP 2.3"
+    },
+    "audio_inputs": {
+      "label": "Audio inputs",
+      "value": "3 × analog RCA, 1 × optical, 1 × coaxial, 1 × 3.5mm",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf",
+      "quote": "Audio Inputs 3*Analog RCA – 1*OPT – 1* COAX – 1*jack 3.5mm"
+    },
+    "streaming": {
+      "label": "Streaming / multi-room",
+      "value": "Chromecast built-in, AirPlay 2, DTS Play-Fi, Works with Sonos; Spotify, Amazon Music HD, TIDAL, Deezer, TuneIn, Pandora; Roon Tested",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf",
+      "quote": "Connectivity : Amazon Music HD, Spotify®, TIDAL, Roon Tested, Deezer, TuneIn, Works with Sonos, AirPlay 2, DTS Play-Fi®, and Chromecast built-in."
+    },
+    "wireless": {
+      "label": "Wi-Fi / Bluetooth",
+      "value": "Dual-band Wi-Fi 5GHz/2.4GHz (802.11ac); Bluetooth RX: SBC/AAC, TX: SBC/aptX/aptX HD",
+      "source": "https://onkyo.com/receivers/tx-nr5100",
+      "quote": "5 GHz/2.4 GHz dual-band Wi-Fi® supporting the 802.11ac standard ... Send or receive audio via Bluetooth® wireless technology (RX mode: SBC/AAC, TX mode: SBC/Qualcomm® aptX™/ aptX HD)"
+    },
+    "power_supply": {
+      "label": "Power supply",
+      "value": "AC 220–240V, 50/60Hz",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf",
+      "quote": "Power Supply AC 220–240 V, 50/60 Hz"
+    },
+    "power_consumption": {
+      "label": "Power consumption",
+      "value": "480W (European/Asian 230V models)",
+      "source": "https://assets.onkyo-av.com/product-manuals/txnr5100_en.pdf",
+      "quote": "Power Consumption 490 W [North American and Taiwanese models] 480 W [European models / Australian and Asian models]"
+    },
+    "dimensions": {
+      "label": "Dimensions (W×H×D)",
+      "value": "435 × 160 × 328 mm (W×H×D) — i.e. H×W×D 160 × 435 × 328 mm",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf",
+      "quote": "Product Dimensions (W x H x D) 435 x 160 x 328 mm"
+    }
+  },
+  "conflicts": [
+    {
+      "field": "output_power",
+      "supplier_claim": "165 וואט לערוץ (supplier price list, row TX-NR5100)",
+      "manufacturer": "165 W is the North American rating at 10% THD: \"165 W at 6 ohms, 1 kHz, 1 ch driven of 10% THD\" (manual, North American models; also onkyo.com refurb page \"165 W/Ch (6 ohms, 1 kHz, 10% THD, 1-ch driven)\"). European/Asian 230V models are rated 7 ch × 135 W at 6 ohms, 1 kHz, 1% THD (IEC) (manual + EMEA spec sheet). The EMEA sheet's marketing paragraph also says \"150W/Ch\" without conditions. US FTC rating: 80 W/Ch (8 ohms, 20 Hz–20 kHz, 0.08% THD, 2-ch driven).",
+      "sources": [
+        "https://assets.onkyo-av.com/product-manuals/txnr5100_en.pdf",
+        "https://onkyo.com/receivers/av-receivers/tx-nr5100-refurished",
+        "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf",
+        "https://onkyo.com/receivers/tx-nr5100"
+      ],
+      "resolution": "spec_facts uses the 230V IEC rating with full conditions; do NOT write a bare '165W' in copy."
+    },
+    {
+      "field": "weight",
+      "values": {
+        "8.4 kg": [
+          "https://onkyo.com/receivers/tx-nr5100",
+          "https://assets.onkyo-av.com/product-manuals/txnr5100_en.pdf"
+        ],
+        "8.5 kg": [
+          "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf"
+        ]
+      },
+      "quotes": [
+        "Weight 18.5 lbs. (8.4 kg)",
+        "Weight 8.4 kg (18.5 lbs.)",
+        "Product Weight 8.5 kg"
+      ],
+      "resolution": "left out of spec_facts (manufacturer sources disagree)"
+    }
+  ],
+  "features": [
+    {
+      "text": "7.2-channel network AV receiver with 5.2.2-ch Dolby Atmos and DTS:X playback",
+      "source": "https://onkyo.com/receivers/tx-nr5100"
+    },
+    {
+      "text": "Dolby Atmos Height Virtualizer and DTS Virtual:X virtualization; Dolby Surround and DTS Neural:X upmixing",
+      "source": "https://onkyo.com/receivers/tx-nr5100"
+    },
+    {
+      "text": "HDMI 2.1: 8K/60 and 4K/120 passthrough, HDR10+, Dolby Vision, VRR, ALLM, QFT, eARC on Main Out, HDCP 2.3",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf"
+    },
+    {
+      "text": "AccuEQ room calibration with AccuReflex and subwoofer EQ (setup microphone included)",
+      "source": "https://onkyo.com/receivers/tx-nr5100"
+    },
+    {
+      "text": "Works with Sonos (Sonos Port required), Chromecast built-in, AirPlay 2, DTS Play-Fi; works with Alexa / Hey Google devices (sold separately)",
+      "source": "https://onkyo.com/receivers/tx-nr5100"
+    },
+    {
+      "text": "Built-in Spotify, TIDAL, Deezer, TuneIn, Pandora, Amazon Music HD; Roon Tested",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf"
+    },
+    {
+      "text": "Bi-directional Bluetooth: receive SBC/AAC, transmit SBC/aptX/aptX HD to headphones",
+      "source": "https://onkyo.com/receivers/tx-nr5100"
+    },
+    {
+      "text": "Klipsch Optimize Mode — preset crossover values for Klipsch Reference / Reference Premiere speakers",
+      "source": "https://onkyo.com/receivers/tx-nr5100"
+    },
+    {
+      "text": "Dynamic Audio Amplification with custom high-current low-noise transformer; drives 4-ohm loads",
+      "source": "https://onkyo.com/receivers/tx-nr5100"
+    },
+    {
+      "text": "Precision 192kHz/24-bit D/A conversion; Hi-Res playback via network and USB incl. DSD256 and 192kHz/24-bit FLAC, ALAC, WAV, AIFF",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR5100-Spec-Sheet-EN.pdf"
+    },
+    {
+      "text": "Zone B pre/line-out sends main-zone audio to a second system or headphone dock",
+      "source": "https://onkyo.com/receivers/tx-nr5100"
+    },
+    {
+      "text": "HDMI Sub Out for a second display (projector/monitor/TV)",
+      "source": "https://onkyo.com/receivers/tx-nr5100"
+    }
+  ],
+  "finishes": [
+    "Black"
+  ],
+  "finish_in_sheet": "",
+  "in_the_box": [
+    "Remote controller with 2 × AAA (R03) batteries",
+    "Speaker setup microphone",
+    "Indoor FM/DAB+ antenna (Europe) / AM loop antenna (Asia)",
+    "Quick Start Guide"
+  ],
+  "image": {
+    "candidate_index": 0,
+    "source_url": "https://onkyo.imgix.net/product-images/Onkyo-TX-NR5100B_FR.jpg?fm=jpg&q=95",
+    "found_on": "https://onkyo.com/receivers/tx-nr5100",
+    "view": "front",
+    "finish": "Black",
+    "why_this_is_the_exact_model": "Official onkyo.com TX-NR5100 product page gallery image (alt 'Onkyo TX-NR5100 B FR'); front panel legend reads 'AV RECEIVER TX-NR5100'; 'ZONE A/B' key, no PHONO input key and no front USB port — all match NR5100 and rule out NR6100. 2000×2000 white-background studio packshot, no text overlay."
+  },
+  "image_url": "https://res.cloudinary.com/o9cfph3q/image/upload/v1791599716/legacy-audio/products/onkyo-onkyo-tx-nr5100.jpg",
+  "rejected_candidates": [
+    {
+      "index": 1,
+      "reason": "Valid exact-model packshot (right 3/4 angle) but front view preferred per image standard"
+    },
+    {
+      "index": 2,
+      "reason": "Valid exact-model packshot (left 3/4 angle) but front view preferred; border slightly less white"
+    },
+    {
+      "index": -1,
+      "reason": "Not downloaded: lifestyle/room scenes (TX-NR5100-Lifestyle, Klipsch bundle scenes), rear panel (US), remote RC-986R"
+    }
+  ],
+  "notes": "POWER: supplier's '165 וואט לערוץ' is the North-American 10%-THD figure; the 230V unit sold in Israel is rated 7×135W @6Ω 1kHz 1% THD (IEC). Copywriter: use the spec_facts value with conditions, never a bare 165W. TUNER: EMEA unit has FM/DAB+ (Europe), Asian unit FM/AM — which one Israel receives is unknown, so tuner left out. Israeli importer NOT confirmed (see knowledge/importers.md): one zap.co.il listing (store X-PRESS) says 'שנה ע\"י ט.ר אלקטרו סטריאו' / 12 months, which contradicts the supplier sheet's 'אחריות לשנתיים' — Daniel should confirm the importer and warranty. Manual (spec source for power/consumption): https://assets.onkyo-av.com/product-manuals/txnr5100_en.pdf  . US page SKU TXNR5100M2BMDC, EMEA SKU TXNR5100M2BMMP, EAN 4573211155518."
+}

@@ -1,0 +1,221 @@
+{
+  "model_confirmed": "TX-NR6100",
+  "distinguishing_features": "Onkyo NR-series 2022 generation, 7.2-ch, THX Certified Select (the NR5100 is not THX), 6 HDMI in / 2 out, powered Zone 2 speaker terminals + HDMI Sub/Zone 2 out, MM phono input, front USB. Front panel printed 'AV RECEIVER TX-NR6100', input row includes a PHONO key, button above first key reads 'ZONE 2', Dynamic Audio Amplification logo top-right, front USB next to SETUP MIC. Sibling TX-NR7100 is 9.2-ch (Dirac). 230V (European/Asian) variant applies in Israel; black only.",
+  "product_page": "https://onkyo.com/receivers/tx-nr6100",
+  "page_title": "TX-NR6100 7.2 Channel AV Receiver | Onkyo",
+  "datasheet": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf",
+  "importer_page": "",
+  "spec_facts": {
+    "model": {
+      "label": "Model",
+      "value": "TX-NR6100",
+      "source": "https://onkyo.com/receivers/tx-nr6100",
+      "quote": "TX-NR6100 7.2-Channel AV Receiver"
+    },
+    "channels": {
+      "label": "Channels",
+      "value": "7.2",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf",
+      "quote": "TX-NR6100 7.2-Channel THX Certified Network A/V Receiver"
+    },
+    "thx": {
+      "label": "THX certification",
+      "value": "THX Certified Select",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf",
+      "quote": "THX Certified Select"
+    },
+    "atmos_layout": {
+      "label": "Dolby Atmos / DTS:X layout",
+      "value": "5.2.2",
+      "source": "https://onkyo.com/receivers/tx-nr6100",
+      "quote": "5.2.2-channel Dolby Atmos® and DTS:X playback"
+    },
+    "output_power": {
+      "label": "Output power",
+      "value": "7 × 165W @ 6Ω (1kHz, 1% THD, 1 channel driven, IEC) — European/Asian 230V models",
+      "source": "https://assets.onkyo-av.com/product-manuals/SN29403926A_TX-NR6100_En_200616_web.pdf.pdf",
+      "quote": "Rated Output Power ... European models / Australian and Asian models: 7 ch × 165 W at 6 ohms, 1 kHz, 1 ch driven of 1% THD (IEC)  [EMEA spec sheet agrees: \"165 W/Ch (6 Ω, 1 kHz, 1%, 1 Channel Driven, IEC)\"]"
+    },
+    "frequency_response": {
+      "label": "Frequency response",
+      "value": "10Hz – 100kHz (+1dB/−3dB, Direct/Pure Audio)",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf",
+      "quote": "Frequency Response 10 Hz–100 kHz/+1 dB, -3 dB (Direct/Pure Audio)"
+    },
+    "snr": {
+      "label": "Signal-to-noise ratio",
+      "value": "106dB (Line, IHF-A); 80dB (Phono, IHF-A)",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf",
+      "quote": "Signal-to-Noise Ratio 106 dB (Line, IHF-A) 80 dB (Phono, IHF-A)"
+    },
+    "speaker_impedance": {
+      "label": "Speaker impedance",
+      "value": "4–16Ω",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf",
+      "quote": "Speaker impedance 4-16 Ω"
+    },
+    "hdmi": {
+      "label": "HDMI inputs / outputs",
+      "value": "6 in / 2 out (Main Out with eARC + Sub/Zone 2 Out)",
+      "source": "https://assets.onkyo-av.com/spec-sheets/TX-NR6100_US_2022-11-02-210644_imld.pdf",
+      "quote": "6 HDMI inputs and 2 outputs (Main Out [eARC], Sub/Zone 2 Out)  [EMEA sheet: \"HDMI In/Out 6 / 2\"]"
+    },
+    "video": {
+      "label": "Video (HDMI 2.1)",
+      "value": "8K/60p and 4K/120p passthrough on HDMI inputs 1–3 and Main/Sub out (inputs 4–6 up to 4K/60); HDR10+, Dolby Vision, BT.2020; VRR, ALLM, QFT; eARC (Main Out); HDCP 2.3",
+      "source": "https://onkyo.com/receivers/tx-nr6100",
+      "quote": "Inputs 1-3 and Main/Sub out support 8K/60AB and 4K/120AB. Inputs 4-6 support up to 4K/60 and HDMI 2.0 features. ... VRR, ALLM, QFT (Quick Frame Transport), DSC (Display Stream Compression), QMS (Quick Media Switching), and eARC (Main Out)."
+    },
+    "audio_inputs": {
+      "label": "Audio inputs",
+      "value": "4 × analog RCA, 1 × phono MM, 1 × optical, 1 × coaxial, 1 × 3.5mm",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf",
+      "quote": "Audio Inputs 4*Analog RCA – 1*OPT – 1* COAX – 1*jack 3.5mm ... Phono Input with MM Equalizer"
+    },
+    "zones": {
+      "label": "Multi-zone",
+      "value": "Powered Zone 2 (5.2-ch main + Zone 2 speakers) or Zone 2 / Zone B line-out; HDMI Sub/Zone 2 output",
+      "source": "https://onkyo.com/receivers/tx-nr6100",
+      "quote": "5.2-ch Main + Powered Zone 2 speakers support synced/independent D/A audio playback ... Zone 2/Zone B line-out*7 (analog RCA) supports synced or independent D/A playback"
+    },
+    "streaming": {
+      "label": "Streaming / multi-room",
+      "value": "Chromecast built-in, AirPlay 2, DTS Play-Fi, Works with Sonos; Spotify, Amazon Music HD, TIDAL, Deezer, TuneIn, Pandora; Roon Tested",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf",
+      "quote": "Connectivity : Amazon Music HD, Spotify®, TIDAL, Roon Tested, Deezer, TuneIn, Works with Sonos, AirPlay 2, DTS Play-Fi®, and Chromecast built-in."
+    },
+    "wireless": {
+      "label": "Wi-Fi / Bluetooth",
+      "value": "Dual-band Wi-Fi 5GHz/2.4GHz (802.11ac); Bluetooth RX: SBC/AAC, TX: SBC/aptX/aptX HD",
+      "source": "https://onkyo.com/receivers/tx-nr6100",
+      "quote": "Stream over 5 GHz/2.4 GHz dual-band Wi-Fi® supporting the 802.11ac standard ... RX mode: SBC/AAC, TX mode: SBC/Qualcomm® aptX™/ aptX HD"
+    },
+    "power_supply": {
+      "label": "Power supply",
+      "value": "AC 220–240V, 50/60Hz",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf",
+      "quote": "Power Supply AC 220–240 V, 50/60 Hz"
+    },
+    "power_consumption": {
+      "label": "Power consumption",
+      "value": "570W (European/Asian 230V models)",
+      "source": "https://assets.onkyo-av.com/product-manuals/SN29403926A_TX-NR6100_En_200616_web.pdf.pdf",
+      "quote": "Power Consumption 635 W [North American and Taiwanese models] 570 W [European models / Australian and Asian models]"
+    },
+    "dimensions": {
+      "label": "Dimensions (W×H×D)",
+      "value": "435 × 173.5 × 379.5 mm (W×H×D) — i.e. H×W×D 173.5 × 435 × 379.5 mm",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf",
+      "quote": "Product Dimensions (W x H x D) 435 x 173.5 x 379.5 mm"
+    },
+    "weight": {
+      "label": "Weight",
+      "value": "9.8 kg",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf",
+      "quote": "Product Weight 9.8 kg  [manual: \"9.8 kg (21.6 lbs.)\"; onkyo.com: \"21.7 lb (9.8 kg)\"]"
+    }
+  },
+  "conflicts": [
+    {
+      "field": "output_power",
+      "supplier_claim": "210 וואט לערוץ (supplier price list, row TX-NR6100)",
+      "manufacturer": "210 W is the North American rating at 10% THD: \"210 W at 6 ohms, 1 kHz, 1 ch driven of 10% THD\" (manual, North American models; US product sheet \"210 W/Ch (6 ohms, 1 kHz, 10% THD, 1 channel driven)\"). European/Asian 230V models are rated 7 ch × 165 W at 6 ohms, 1 kHz, 1% THD (IEC) (manual + EMEA spec sheet); European max effective output 175 W (6 ohms, 1 kHz, 10% THD, JEITA). US FTC rating: 100 W/Ch (8 ohms, 20 Hz–20 kHz, 0.08% THD, 2-ch driven).",
+      "sources": [
+        "https://assets.onkyo-av.com/product-manuals/SN29403926A_TX-NR6100_En_200616_web.pdf.pdf",
+        "https://assets.onkyo-av.com/spec-sheets/TX-NR6100_US_2022-11-02-210644_imld.pdf",
+        "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf",
+        "https://onkyo.com/receivers/tx-nr6100"
+      ],
+      "resolution": "spec_facts uses the 230V IEC rating with full conditions; do NOT write a bare '210W' in copy."
+    }
+  ],
+  "features": [
+    {
+      "text": "THX Certified Select with four THX listening modes: cinema, gaming, music and surround EX",
+      "source": "https://onkyo.com/receivers/tx-nr6100"
+    },
+    {
+      "text": "7.2-channel network AV receiver with 5.2.2-ch Dolby Atmos and DTS:X playback",
+      "source": "https://onkyo.com/receivers/tx-nr6100"
+    },
+    {
+      "text": "Dolby Atmos Height Virtualizer and DTS Virtual:X; Dolby Surround and DTS Neural:X upmixing",
+      "source": "https://assets.onkyo-av.com/spec-sheets/TX-NR6100_US_2022-11-02-210644_imld.pdf"
+    },
+    {
+      "text": "HDMI 2.1 on inputs 1–3 and both outputs: 8K/60, 4K/120, VRR, ALLM, QFT, QMS, eARC (Main Out); HDR10+ and Dolby Vision",
+      "source": "https://onkyo.com/receivers/tx-nr6100"
+    },
+    {
+      "text": "Discrete Zone 2 HDMI switching — a second room/display with its own 4K/8K source",
+      "source": "https://onkyo.com/receivers/tx-nr6100"
+    },
+    {
+      "text": "Powered Zone 2 speaker terminals: switch between 7.2/5.2.2-ch and 5.2-ch + Zone 2",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf"
+    },
+    {
+      "text": "MM phono input with built-in equalizer",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf"
+    },
+    {
+      "text": "AccuEQ room calibration with AccuReflex phase matching for Atmos-enabled speakers (setup microphone included)",
+      "source": "https://onkyo.com/receivers/tx-nr6100"
+    },
+    {
+      "text": "Works with Sonos (Sonos Port required), Chromecast built-in, AirPlay 2, DTS Play-Fi; works with Alexa / Hey Google devices (sold separately)",
+      "source": "https://onkyo.com/receivers/tx-nr6100"
+    },
+    {
+      "text": "Built-in Spotify, TIDAL, Deezer, TuneIn, Pandora, Amazon Music HD; Roon Tested",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf"
+    },
+    {
+      "text": "Bi-directional Bluetooth: receive SBC/AAC, transmit SBC/aptX/aptX HD (24-bit) to headphones",
+      "source": "https://onkyo.com/receivers/tx-nr6100"
+    },
+    {
+      "text": "Klipsch Optimize Mode — preset crossover values for Klipsch Reference / Reference Premiere speakers",
+      "source": "https://onkyo.com/receivers/tx-nr6100"
+    },
+    {
+      "text": "Precision 192kHz/24-bit D/A conversion; Hi-Res playback via network and USB incl. DSD256 and 192kHz/24-bit FLAC, ALAC, WAV, AIFF",
+      "source": "https://assets.onkyo-av.com/spec-sheets/EMEA-Onkyo-TX-NR6100-Spec-Sheet-EN.pdf"
+    }
+  ],
+  "finishes": [
+    "Black"
+  ],
+  "finish_in_sheet": "",
+  "in_the_box": [
+    "Power cord",
+    "Remote controller with 2 × AAA (R03) batteries",
+    "Speaker setup microphone",
+    "Indoor FM/DAB+ antenna and AM loop antenna",
+    "Quick Start Guide"
+  ],
+  "image": {
+    "candidate_index": 0,
+    "source_url": "https://onkyo.imgix.net/product-images/Onkyo-TX-NR6100-Front-Panel.jpg?fm=jpg&q=95",
+    "found_on": "https://onkyo.com/receivers/tx-nr6100",
+    "view": "front",
+    "finish": "Black",
+    "why_this_is_the_exact_model": "Official onkyo.com TX-NR6100 product page gallery image (Onkyo-TX-NR6100-Front-Panel); front panel legend reads 'AV RECEIVER TX-NR6100'; display shows 'THX Cinema', 'ZONE 2' key, PHONO input key, front USB port and DAA logo — all NR6100 features that rule out NR5100 (no THX/phono/front USB) and NR7100 (9.2-ch). 2000×2000 white-background studio packshot, no text overlay."
+  },
+  "image_url": "https://res.cloudinary.com/o9cfph3q/image/upload/v1791599718/legacy-audio/products/onkyo-onkyo-tx-nr6100.jpg",
+  "rejected_candidates": [
+    {
+      "index": 1,
+      "reason": "Valid exact-model packshot (front right angle) but front view preferred per image standard"
+    },
+    {
+      "index": 2,
+      "reason": "Exact-model image (Onkyo-TX-NR6100_B_LS) but front view preferred; border less white (0.987)"
+    },
+    {
+      "index": -1,
+      "reason": "Not downloaded: og:image lifestyle scene with Klipsch speakers, rear panel, remote RC-972R"
+    }
+  ],
+  "notes": "POWER: supplier's '210 וואט לערוץ' is the North-American 10%-THD figure; the 230V unit sold in Israel is rated 7×165W @6Ω 1kHz 1% THD (IEC). Copywriter: use the spec_facts value with conditions, never a bare 210W. Supplier's '2 אזורי תמונה' (two video zones) is consistent with HDMI Main + Sub/Zone 2 out. TUNER left out (EMEA = FM/DAB+, Asia = FM/AM; Israeli variant unknown). Israeli importer NOT confirmed (see knowledge/importers.md) — Daniel should confirm importer and warranty (sheet says שנתיים). Manual: https://assets.onkyo-av.com/product-manuals/SN29403926A_TX-NR6100_En_200616_web.pdf.pdf . US SKU TXNR6100M2BMDC, EMEA SKU TXNR6100M2BMMP, EAN 4573211159530."
+}
